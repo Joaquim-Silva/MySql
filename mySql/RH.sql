@@ -24,10 +24,10 @@ insert into tb_funcionarios(nome,sexo,cargo,salario,presente)values("Luna ","F",
 
 select *from tb_funcionarios;
 
-# salario base da empresa é 2000 reais usei  4000
-
-select* from  tb_funcionarios where salario >= 4000;
 
 
+select* from  tb_funcionarios where salario >= 2000;
 
+
+  Update tb_funcionarios Set salario = 1900  where id = '1';
 
