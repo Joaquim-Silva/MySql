@@ -23,6 +23,7 @@ insert into tb_funcionarios(nome,sexo,cargo,salario,presente)values("Mateus ","M
 insert into tb_funcionarios(nome,sexo,cargo,salario,presente)values("Luna ","F","Sypervisora", 6000.00,true);
 
 select *from tb_funcionarios;
+
 # salario base da empresa é 2000 reais usei  4000
 
 select* from  tb_funcionarios where salario >= 4000;
