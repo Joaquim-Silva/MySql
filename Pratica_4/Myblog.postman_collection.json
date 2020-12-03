@@ -42,7 +42,26 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/postagem/getById1",
+					"raw": "http://localhost:8080/getById1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getById1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByTitulo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/postagem/titulo/api",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -50,7 +69,67 @@
 					"port": "8080",
 					"path": [
 						"postagem",
-						"getById1"
+						"titulo",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"titulo\": \"Aula de Api Rest\",\r\n    \"texto\": \"Estamos Aprendendo Muito\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/postagem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/postagem/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem",
+						"1"
 					]
 				}
 			},
