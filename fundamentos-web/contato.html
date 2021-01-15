@@ -1,50 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body>
-    <ul>
-        <li>
-        <a href = "index.html"> Home </a>
-        </li>
-        
-        <li>
-            <a href = "contato.html"> Contato </a>
-        </li>
-    </ul>
-   
-    <h1>Entre em contato comigo</h1>
 
-    <form>
-       <label for="nome">Nome</label> <br>
-       <input type="text" id ="nome">
-        <br>
-        <br>
-       <label for="email">E-mail</label> <br>
-       <input type="email" id ="email"> 
-        <br>
-        <br>
-       <label for="assunto">Assunto</label> <br>
-       <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-       <br>
-        <br>
-       <button>Enviar</button>
+<body class="bg-warning">
+    <nav class="navbar navbar-light bg-danger">
+        <form class="form-inline">
+            <a button href="index.html" class="btn  btn-outline-danger font-weight-bold ml-5  bg-white" type="button">Home</button></a>
+            <div class="ml-5"></div>
+            <a button href="contato.html" class="btn btn-sm  btn-outline-dark bg-white" type="button"> Contato</button></a>
+        </form>
+    </nav>
 
 
-    </form>
 
-    <h2>Endereço</h2>
+    <h1 class="center font">Fale Conosco</h1>
+
+    <div class="container mb-50">
+        <div>
+            <h2 class="font color center">Qual sua Duvida? </h2>
+            <form>
+                <label for="nome">Nome</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
+                <br>
+                <label for="Apelido">Apelido(Opcional)</label> <br>
+                <input type="text" id="Apelido">
+
+                <br>
+                <br>
+                <label for="email">E-mail</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
+
+                <br>
+                <label for="assunto">Assunto</label> <br>
+                <textarea name="assunto" id="assunto" cols="50" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <br>
+               
+                <button onclick="enviar()" type="button" class="btn btn-info bg-dark">Enviar</button>
+
+            </form>
+        </div>
+
+
+        <div class="ml-50">
+            <p class="font-weight-bold">Rua Abelardo luz, 37 </p>
+            <p class="font-weight-bold">Guarulhos-SP </p>
+
+            <iframe class="mb-50"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.541802963247!2d-46.530899949355245!3d-23.440913362965674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52431091cb5%3A0x5ad4922a6629c856!2sR.%20Abelardo%20Luz%2C%2037%20-%20Jardim%20Santa%20Cecilia%2C%20Guarulhos%20-%20SP%2C%2007123-460!5e0!3m2!1sen!2sbr!4v1610377664518!5m2!1sen!2sbr"
+                width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+    </div>
+    <hr>
+    <div class="container"><footer>
+
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+
+                <a href="https://www.facebook.com/" class="p-3">
+                    <img class="tm-social" src="assets/img/facebook.png" alt="Logo do Facebook">
+                </a>
+                <a href="https://www.linkedin.com/" class="p-3">
+                    <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
+                </a>
+                <a href="https://www.instagram.com/" class="p-3">
+                    <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Instagram">
+                </a>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Todos os direitos reservados: Diego Joaquim &copy
+                </p>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+</div>
     
-    <p>Rua Abelardo luz, 37</p>
-    <p>Guarulhos-SP</p>
+    </div>
+    </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.541802963247!2d-46.530899949355245!3d-23.440913362965674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52431091cb5%3A0x5ad4922a6629c856!2sR.%20Abelardo%20Luz%2C%2037%20-%20Jardim%20Santa%20Cecilia%2C%20Guarulhos%20-%20SP%2C%2007123-460!5e0!3m2!1sen!2sbr!4v1610377664518!5m2!1sen!2sbr" 
-    width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <script src="assets/js/script.js"></script>
 
-
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
