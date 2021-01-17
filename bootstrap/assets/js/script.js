@@ -11,7 +11,7 @@ por Seletor: querySlector()
 */
 
 let nome = window.document.getElementById('nome')
-let idade = window.document.querySelector('#idade')
+let apelido = window.document.querySelector('#apelido')
 let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
  let nomeOk = false
@@ -21,8 +21,8 @@ let assunto = document.querySelector('#assunto')
 
 
 nome.style.width = '100%'
-idade.style.width = '20%'
-email.style.width = '100%'
+apelido.style.width = '100%'
+email.style.width = '150%'
 
 
 function validaNome() {

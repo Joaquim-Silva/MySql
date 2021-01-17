@@ -7,21 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-   
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-        .tm-social {
-            width: 50px;
-            height: 50px;
-        }
-    </style>
-    <title>Olá, mundo!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bem-vindo a Westeros</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="#">A'Lars</a>
+        <a class="navbar-brand" href="#">Casa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -29,248 +24,591 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link text-warning" href="#">Home<span class="sr-only">(Página atual)</span></a>
-
+                    <a class="nav-link text-warning" href="#westeros">Inicio</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" href="#mormont">Mormont</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#bolton">Bolton</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#stark">Stark </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#greyjoy">Greyjoy </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#frey">Frey </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#arryn">Arryn </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#tully">Tully </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#targaryen">Targaryen </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#baratheon">Baratheon  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#tyrell">Tyrell  </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#tarly">Tarly </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="#martell">Martell </a>
+                      </li>
 
             </ul>
         </div>
     </nav>
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100"
-                    src="https://www.wallpapermaiden.com/wallpaper/33296/download/1280x720/thanos-avengers-infinity-war-smiling-artwork.jpeg"
-                    alt="Primeiro Slide">
+    <div class="container d-flex">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 justify-content-center"
+                        src="https://assets.b9.com.br/wp-content/uploads/2019/05/gameoffrones2.jpg"
+                        alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item justify-content-center">
+                    <img class="d-block w-100 justify-content-center"
+                        src="https://static.wikia.nocookie.net/gameofthrones/images/e/e1/A_Muralha.png/revision/latest/scale-to-width-down/1000?cb=20150825213829&path-prefix=pt-br"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item justify-content-center">
+                    <img class="d-block w-100 justify-content-center"
+                        src="https://i.pinimg.com/564x/ab/33/59/ab33593e3cd987a2e877c0a36da17689.jpg" tabindex=" 0"
+                        onmousemove="mapaZoom()" onmouseout="mapaNormal()"" alt=" Terceiro Slide">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100"
-                    src="https://images.hdqwalls.com/download/thanos-avengers-infinity-war-5k-4q-1280x720.jpg"
-                    alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100"
-                    src="https://cinesiageek.com.br/wp-content/uploads/2019/11/avengers-endgame-thanos.jpeg"
-                    alt="Terceiro Slide">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
     </div>
 
     <div class="jumbotron">
-        <h1 class="display-4">O Titã</h1>
-        <p class="lead"> A Origem de um genocida</p>
+        <h1 class="display-4" id="westeros">Westeros</h1>
+        <p class="lead"> Conheça as casas mais tradicionais de Game of Thrones</p>
         <hr class="my-4">
-        <p>Thanos é um dos filhos de A’Lars, também conhecido como Mentor. Ele nasceu no seio da sociedade Eterna, uma
-            raça antiga de humanos geneticamente modificados por Celestiais, uma raça de extraterrestres misteriosos.
-
-            No entanto, enquanto que todos os membros de sua espécie se parecem com humanos, Thanos nasceu com Síndrome
-            Deviante. Essa é uma condição rara que faz com que seu aspecto seja parecido com o da raça dos Deviantes,
-            primos e inimigos dos Eternos. Sua pele cinzenta e corpo deformado fez com que sua mãe o tentasse matar logo
-            que nasceu.
-
-            Durante seus primeiros anos de escola, Thanos era um garoto pacífico. Mas devido a toda a discriminação de
-            que era alvo, tanto pela sua família como pela restante sociedade Eterna, ele acabou se tornando em um
-            garoto sombrio e vingativo.</p>
+        <p>Existe um elemento que chama bastante atenção no mundo criado pela série de TV e nos livros de Game of
+            Thrones, as Casas nobres das famílias de Westeros. Cada uma possui uma particularidade, um brasão único,
+            lemas marcantes, castelos em lugares inusitados, histórias de fundação lendárias. Ou seja, é um elemento que
+            dá um gosto especial para a série. Além de ser impossível de simpatizar com algumas dessas Casas.
+            Selecionamos aqui as principais casas que governam os Sete Reinos. Confira!</p>
 
     </div>
-    <div class="container">
-        <div class="card-group">
-            <div class="card">
-                <img class="card-img-top" src="https://s.aficionados.com.br/imagens/thanostitan.jpg"
-                    alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">A vingança de um ser desprezado</h5>
-                    <p class="card-text">Para se sentir mais confiante, Thanos cresceu tentando ser mais poderoso do que
-                        todo mundo ao seu redor e, à medida que seus poderes começaram a crescer, também sua ambição e
-                        desejo de destruição. Thanos acabou roubando uma das naves de seu povo e viajou pelo cosmos,
-                        procurando mercenários para criar seu exército privado.
 
-                        Ao voltar de seu exílio, o Titã Louco lançou bombas atômicas em seu planeta, Titã, matando a
-                        maior parte da população, incluindo sua mãe Sui-San. Aí, ele se declarou o líder dos restantes
-                        sobreviventes e começou a preparar a conquista do planeta habitado mais próximo, a Terra.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top"  id="mormont" src="https://s.aficionados.com.br/imagens/mormont.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Mormont - Os resistentes ursos</h5>
+
+                <h4 class="font-weight-bold">"Aqui Nós Resistimos"</h4>
+                <p class="card-text">A Casa Mormont é uma família antiga e nobre do norte de Westeros, juramentada e
+                    extremamente leal aos Starks. Contudo, não são uma Casa muito rica, devido a escassez de recursos
+                    naturais do norte. Sua fortaleza fica na Ilha dos Ursos, na Baía de Gelo, bastante próximos da
+                    Muralha. Portanto, são uma das primeiras defesas dos Sete Reinos contra uma possível invasão dos
+                    povos bárbaros.
+
+                    Os Mormonts eram também uma das poucas famílias que possuíam uma arma ancestral de aço valiriano, a
+                    Garralonga. Essa espada, no entanto, foi presenteada a Jon Snow por Jeor Mormont, quando este era o
+                    Lorde Comandante da Patrulha da Noite.
+
+                    Entre os membros notórios dessa família estão o já citado Jeor Mormont, o Velho Urso, que abdicou de
+                    sua posição como lorde em favor ao seu filho e assumiu um posto entre a Patrulha da Noite. Jorah
+                    Mormont, filho de Jeor, foi exilado de Westeros e perdeu seu título nobre após ser descoberto
+                    traficando escravos. Maege Mormont, a Mulher-Urso, Senhora da Ilha dos Ursos e líder dos Mormonts. A
+                    jovem Lyanna Mormont que aparece na série é uma das herdeiras de Maege.</p>
             </div>
-            <div class="card">
-                
-                <img class="card-img-top" src="https://s.aficionados.com.br/imagens/thanosbrother2.jpg"
-                    alt="Imagem de capa do card">
-                    
-                <div class="card-body">
-                    <h5 class="card-title">Seu irmão é um perigo para a mulherada</h5>
-                    <p class="card-text">Eros é o irmão mais novo de Thanos e cresceu amistoso e despreocupado, ao
-                        contrário de seu irmão mais velho que era ambicioso e manipulador.
-
-                        Já na fase adulta, em uma campanha contra Thanos, Eros lutou junto dos sobreviventes de Titã e
-                        com o Capitão Marvel e os Vingadores. Foi aqui que Thanos foi derrotado pela primeira vez mas,
-                        ainda assim, Eros viajou até à Terra onde procurou os Vingadores, pedindo para se juntar ao
-                        grupo. Eles permitiram que ele se juntasse, tomando o nome de Starfox, e durante meses lutaram
-                        juntos.
-
-                        Eros sempre foi mimado e narcisista e as personalidades diferentes dos dois irmãos tornaram sua
-                        relação muito conflituosa. Sendo um Eterno, Eros tem força extrema e a habilidade de voar.
-                        Porém, seu superpoder é mais caricato que o normal. Ele consegue libertar uma feromona que
-                        estimula o centro de prazer no cérebro das pessoas, fazendo com que todo mundo se sinta atraído
-                        por ele.
-
-                        Starfox passa a maior parte de seu tempo procurando mulheres e nem sempre age de forma moral.
-                        Porém, mesmo já tendo dormido com quase todo o universo, ele acaba sempre retornando para os
-                        braços da prostituta Heater Delight.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizsados 3 minutos atrá</small>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="https://s.aficionados.com.br/imagens/thanosdeath4.jpg"
-                    alt="Imagem de capa do card">
-                <div class="card-body">
-                    <h5 class="card-title">Um amor de morte</h5>
-                    <p class="card-text">Thanos ficou romanticamente obcecado com a Morte, tendo sentido amor pela
-                        primeira vez em toda a sua vida.
+        </div>
+        <div class="card">
+            <img class="card-img-top" id ="bolton" src="https://s.aficionados.com.br/imagens/bolton.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Bolton - Os torturadores do norte</h5>
+                <h4 class="font-weight-bold">"Nossas lâminas são afiadas"</h4>
+                <p class="card-text">Uma casa que possui uma reputação sinistra entre os Sete Reinos. Os Boltons são uma
+                    família nortista impiedosa e vingativa que possuem o costume de esfolar seus inimigos. Não perdem
+                    uma oportunidade de perpetuar essa fama, estampando um homem sem pele em seu brasão e batizando sua
+                    fortaleza de Forte do Pavor.
 
-                        Tal como outros deuses celestiais, a Morte consegue tomar diferentes formas. Quando Thanos ainda
-                        era novo, ela apareceu pela primeira vez como uma garota pequena, encorajando a sociopatia de um
-                        Thanos ainda jovem. Com ela, ele aprendeu todos os segredos sombrios que o levaram a aumentar
-                        seu poder. Quando ele chegou à idade adulta, a Morte apareceu para ele agora como uma mulher,
-                        enlaçando seu coração para sempre.
+                    Os dizeres de sua casa, "Nossas Lâminas são Afiadas", é bastante ameaçador. Contudo, possuem um
+                    segundo dizer não oficial que é ainda mais aterrorizante: "Um homem nu possui poucos segredos, mas
+                    um homem esfolado não possui nenhum".
 
-                        Para se tornar digno dela, ele decidiu que iria se tornar o mais poderoso possível. Primeiro,
-                        ele planejou algo simples, tentando capturar poder político ao conquistar mundos, mas
-                        rapidamente ele começou a coletar itens de grande poder como o Cubo Cósmico e as Joias do
-                        Infinito.
+                    Apesar de possuírem uma longa e histórica rivalidade contra os Starks, os Boltons são uma das várias
+                    famílias nortistas que juraram fidelidade aos senhores de Winterfell. O que não os impediu de se
+                    aliar aos Lannisters e trair Robb Stark em sua campanha para se tornar o Rei do Norte, tomando o
+                    título de Guardião do Norte para si.
 
-                        A relação entre os dois teve os seus altos e baixos. Em uma ocasião, a Morte acabou seu
-                        relacionamento com Thanos, o banindo de seu reino. Por outro lado, eles tiveram um filho juntos,
-                        Podridão.</p>
-                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
-                </div>
+                    Notórios membros da Casa: Roose Bolton, o Lorde Sangue-Suga, que possui esse título pelo seu hábito
+                    de ter o sangue drenado por essas criaturas. É o patriarca e líder dos Boltons. Ramsey Bolton,
+                    antigamente um bastardo de sobrenome Snow, mas foi reconhecido como herdeiro por seu pai Roose.
+                    Ramsey é um rapaz impiedoso e sádico.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"  id="stark" src="https://s.aficionados.com.br/imagens/stark.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Stark - Os lobos do inverno</h5>
+
+                <h4 class="font-weight-bold">"O Inverno Está Chegando"</h4>
+                <p class="card-text">Uma das sete grandes Casas de Westeros, responsável por manter a ordem no Norte.
+                    Nos tempos antigos eles eram independentes e comandavam o norte com seus Reis do Inverno. Isso, no
+                    entanto, mudou com a conquista de Aegon Targaryen, e os Starks juraram lealdade ao recém-unificado
+                    Sete Reinos.
+
+                    A fortaleza dos Starks é Winterfell e ele são uma das poucas Casas cujo dizer oficial é uma
+                    advertência e não uma vanglória. Também eram uma das casas a possuir uma lâmina ancestral de aço
+                    valiriano. No caso era uma espada enorme e pesada chamada Gelo. Essa espada foi tomada de Eddard
+                    Stark pelos Lannisters, que a destruiu para fabricar outras duas espadas valirianas.
+
+                    Os Starks comumente possuem traços semelhantes entre si, apresentando faces longas, cabelos
+                    castanhos e olhos cinzentos. Também é comum que sejam melancólicos e frios. Acredita-se que alguns
+                    deles possuem "sangue de lobo", uma selvageria inata, por vezes associada aos troca-peles dos povos
+                    bárbaros de além da Muralha.
+
+                    Eddard Stark, o Lobo Quieto, era o Lorde de Winterfell e Guardião do Norte no início de Game of
+                    Thrones. Ele morre ao descobrir a verdade acerca de Jeoffrey Baratheon, passando as
+                    responsabilidades do Norte para seus filhos. Seus filhos são, Robb, Sansa, Arya, Brandon, Rickon, e
+                    o bastardo Jon Snow.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card">
+            <img class="card-img-top"  id ="greyjoy" src="https://s.aficionados.com.br/imagens/greyjoy.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Greyjoy - O terror dos mares</h5>
+
+                <h4 class="font-weight-bold">"Nós Não Semeamos"</h4>
+                <p class="card-text">Outra das grandes Casas de Westeros. Os Greyjoys são orgulhosos e habilidosos
+                    guerreiros do mar. Seu trono fica no castelo de Pyke, de onde governam as Ilhas de Ferro, um
+                    arquipélago de clima chuvoso e severo, de terreno rochoso que não possibilita o cultivo de muita
+                    coisa, e cercado por mares tempestuosos.
+
+                    Seus dizeres "Nós Não Semeamos" refletem um traço da cultura local. Pois no passado costumam atacar
+                    e saquear o continente para conquistar comida, tesouros, mulheres e escravos para trabalharem no
+                    cultivo. Os Greyjoys e o povo das Ilhas de Ferro são os vikings de Game of Thrones.
+
+                    As ilhas de Ferro também são conhecidas como a Terra dos Mil Reis, pois é dito que em seu navio,
+                    todo capitão é um rei. Isso também possui um paralelo em seu sistema de governo. Apesar dos Greyjoy
+                    estarem no comando da região, isso não é garantia de que o poder será passado para seus
+                    descendentes. Todas as famílias que se acharem no direito de tomar o título Senhor das Ilhas de
+                    Ferro podem se candidatar após a morte do último comandante. O mesmo deve ser feito pelo herdeiro
+                    Greyjoy. Contudo, ao longo dos anos, nenhuma outra Casa produziu tantos Senhores quanto a Greyjoy.
+
+                    Ao início da série, Balon Greyjoy, um homem rancoroso e amargurado, está sob o comando das Ilhas de
+                    Ferro. Seu filho Theon é mantido como refém em Winterfell desde que Balon e as Ilhas de Ferro se
+                    rebelaram há anos atrás. Yara (Asha, nos livros) é a destemida filha que permanece ao lado de Balon.
+                    Euron Greyjoy, irmão de Balon, após anos distante das Ilhas de Ferro, surge para concorrer ao trono
+                    de Pyke contra sua sobrinha Yara. </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"  id="frey" src="https://s.aficionados.com.br/imagens/housefrey.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Frey - Os reguladores da travessia</h5>
+                <h4 class="font-weight-bold">"Nós Não Semeamos"</h4>
+                <p class="card-text">Os Frey são uma nobre e rica família das Terras Fluviais, subordinadas ao comando
+                    da Casa Tully de Correrrio. Chegaram ao poder que possuem graças à astúcia de seus antepassados, que
+                    viram um ponto estratégico no Ramo Verde, um dos rios que compõe o Tridente. Lá construíram uma
+                    ponte e a protegeram com duas fortalezas idênticas, as Gêmeas, uma em cada extremidade da ponte.
+
+                    As Gêmeas se tornaram uma passagem imprescindível em uma viagem entre o sul e o norte de Westeros, e
+                    através de favores e pedágios, os Freys conquistaram sua relevância no cenário político dos Sete
+                    Reinos. É por essa razão que o Senhor das Gêmeas também é conhecido pelo título de Senhor da
+                    Travessia.
+
+                    Walder Frey é o atual Senhor da Travessia, e ainda parece que o será por muitos outros anos, apesar
+                    de sua idade extremamente avançada, beirando os noventa anos. Sobreviveu à várias esposas, estando
+                    casado com sua oitava. Por conta disso também possui centenas de herdeiros (literalmente!), contando
+                    com 22 filhos e 7 filhas legítimas, fora os diversos bastardos.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" id="arryn" src="https://s.aficionados.com.br/imagens/arryn.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Arryn - O falcão que vigia do alto</h5>
+                <h4 class="font-weight-bold">"Tão Alto Como a Honra"</h4>
+                <p class="card-text">Uma das principais e mais orgulhosas Casas de Westeros, os Arryns são a família que
+                    possui a guarda do Vale, uma região que engloba as Montanhas da Lua, o Vale de Arryn, as penínsulas
+                    conhecidas como os Dedos, e as ilhas Três Irmãs.
+
+                    O Vale é uma região de difícil acesso, cuja geografia montanhosa dificulta qualquer viagem. Sua rota
+                    principal é fortemente guardada pelo Portão Sangrento, uma fortaleza que serve como ponto de parada
+                    para qualquer um que queira entra no Vale. Também serve como uma proteção do reino contra os Clãs
+                    das Montanhas, grupos rebeldes e selvagens, que não obedecem às leis vigentes em Westeros.
+
+                    Os Arryns vivem na Lança do Gigante, o pico mais alto das Montanhas da Lua. Lá se encontra o palácio
+                    conhecido como o Ninho da Águia, uma fortaleza considerada intransponível por todos os Sete Reinos.
+                    Contudo, devido ao clima da região, durante o inverno a família se muda para o pé da montanha, para
+                    a fortaleza conhecida como Portão da Lua.
+
+                    Jon Arryn era o líder dessa nobre Casa, e após a vitoriosa rebelião de Robert Baratheon, foi nomeado
+                    Mão do Rei. Antes mesmo do início da série, Jon morreu misteriosamente, evento que faz com que toda
+                    a história comece a se desenvolver. Jon deixou apenas um herdeiro, o mimado Robert Arryn, ainda uma
+                    criança.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Atualizados 3 minutos atrás</small>
             </div>
         </div>
     </div>
+
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" id="tully" src="https://s.aficionados.com.br/imagens/tully.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Tully - A truta fazedora de alianças</h5>
+                <h4 class="font-weight-bold">"Família, Dever, Honra"</h4>
+                <p class="card-text">Os Tullys são uma das mais nobres Casas de Westeros, e um dos guardiões dos Sete
+                    Reinos. São os responsáveis pelas Terras Fluviais, e por isso possuem o título de Senhor do
+                    Tridente. Sua sede é Correrrio, uma fortaleza que se localiza na confluência dos rios Pedregoso e
+                    Ramo Vermelho, cujas águas formam uma defesa natural para o castelo.
+
+                    Essa casa chegou ao poder e influência que possuem por serem uma das primeiras famílias a apoiarem a
+                    Conquista de Aegon Targaryen. Após isso, firmaram sua posição através de várias alianças com outras
+                    Casas de Westeros, principalmente sob a forma de casamentos.
+
+                    Hoster Tully era o líder dessa Casa. Contudo, devido à sua debilitada saúde, morreu e o título foi
+                    passado ao seu filho Edmure Tully. Catelyn Stark, esposa de Eddard Stark é uma Tully, filha de
+                    Hoster e irmã de Edmure. Outro integrante dessa família é Brynden Tully, o Peixe Negro, que
+                    renunciou o irmão Holster, após esse ter arranjado seu casamento sem antes consultá-lo.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" id="lannister" src="https://s.aficionados.com.br/imagens/lannister.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Lannister - O leão dourado do oeste</h5>
+                <h4 class="font-weight-bold">"Ouça-me Rugir"</h4>
+                <p class="card-text">Considerada a Casa mais rica de Westeros, os Lannisters são também uma das Casas a
+                    proteger uma das regiões dos Sete Reinos. No caso, são os Senhores das Terras Ocidentais. Sua morada
+                    é Rochedo Casterly, um palácio construído sobre um enorme rochedo à beira mar. Tal rochedo também é
+                    abundante em depósitos de ouro, fonte de toda a riqueza da família.
+
+                    Assim como os Boltons do norte, os Lannisters possuem um lema não oficial, além do "Ouça-me Rugir".
+                    Esse segundo lema é "Um Lannister sempre paga suas dívidas." Um lema que evidencia muito mais o lado
+                    vingativo e premeditado comum aos membros dessa casa, do que uma mera menção à seu compromisso com
+                    palavras ou dinheiro.
+
+                    Como foi dito anteriormente, os Lannisters são famosos por serem pessoas astutas e inteligentes.
+                    Entre as características físicas, os Lannisters normalmente possuem cabelos dourados e olhos
+                    verde-esmeralda.
+
+                    A história dessa casa começou quando Lann, o Esperto, um vigarista lendário da antiguidade que
+                    enganou a Casa Casterly a presentear o Rochedo Casterly a ele. O vigarista manteve o nome da antiga
+                    família para humilhá-los. Desde então, os Lannisters surgiram e se tronaram uma orgulhosa família de
+                    Westeros.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" id="targaryen" src="https://s.aficionados.com.br/imagens/targaryen.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Targaryen - O dragão com sede de sangue</h5>
+                <h4 class="font-weight-bold">"Fogo e Sangue"</h4>
+
+                <p class="card-text">Os Targaryens são uma família descendente de Valíria, tendo partido dessa lendária
+                    cidade doze anos antes do misterioso cataclismo que a destruiu completamente. Por causa disso, se
+                    tornaram os últimos senhores de dragão a existir no mundo. Fizeram sua casa na ilha Pedra do Dragão,
+                    em Westeros, onde permaneceram por mais de um século, até que decidissem conquistar Westeros.
+
+                    Aegon e suas irmãs-esposas Visenya, e Rahenys invadiram Westeros montados em dragões e começaram as
+                    suas Guerras de Conquista. Westeros já era dividida em sete reinos, cada um comandado por um rei
+                    diferente. Com a força descomunal do fogo de seus dragões, e com o derramamento de muito sangue em
+                    batalhas, os Targaryen fizeram todos os reinos, exceto Dorne, se curvarem.
+
+                    Com fim dos conflitos, o Trono de Ferro foi construído com todas as espadas dos senhores que juraram
+                    lealdade ao reinado de Aegon. Assim os Seis Reinos foram unificados e começou a Dinastia Targaryen.
+                    Apenas anos mais tarde é que conseguiriam juntar Dorne ao seu domínio.
+
+                    A Casa Targaryen reinou Westeros por 276 anos, período pelo qual enfrentou vários problemas, como a
+                    morte de seus dragões, rebeliões, epidemias, e mais guerras. Por fim, durante o reinado de Aerys II,
+                    conhecido como Rei Louco, Robert Baratheon liderou a revolta contra contra os Targaryen e assumiu o
+                    trono após destituí-los.
+
+                    Contudo, esse não foi o fim dos Targaryens. Aerys, seu filho Rhaegar e sua família foram mortos
+                    durante a Guerra Civil, mas dois herdeiros conseguiram atravessar o Mar Estreito, se abrigando em
+                    uma das cidades livres de Essos. Os dois sobreviventes eram Viserys e Daenerys, irmãos, filhos do
+                    Rei Louco. </p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" id="baratheon" src="https://s.aficionados.com.br/imagens/baratheon.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Baratheon - O veado que conquistou a coroa</h5>
+                <h4 class="font-weight-bold">"Nossa é a Fúria"</h4>
+                <p class="card-text">Uma das sete nobres Casas de Westeros a receberem o dever de guardar um dos Sete
+                    Reinos após a conquista dos Targaryen. A eles foi dado a proteção das Terras da Tempestade, e seu
+                    trono fica em Ponta Tempestade, um antigo castelo construído pelos Reis da Tempestade de outrora e
+                    antiga moradia da extinta Casa Durrandon.
+
+                    A linhagem dos Baratheon começou quando Orys Baratheon, um dos generais de Aegon Taragryen,
+                    conquistou o castelo de Ponta Tempestade durante as Guerras de Conquista. Ele se casou com a
+                    princesa Argella Durrandon, única descendente do último Rei da Tempestade. Tomou para si não apenas
+                    o castelo e as terras, mas também o brasão e o lema dos Durrandons. Desde então a Casa Baratheon
+                    mostrou ser uma das famílias mais leais ao reinado Targaryen.
+
+                    Contudo, até mesmo a lealdade possui um limite. Quando o príncipe Rhaegar, filho do Rei Louco Aerys,
+                    sequestrou para si a Lady Lyanna Stark, isso despertou a famosa fúria dos Baratheon. Lyanna era a
+                    amada e prometida noiva de Robert Baratheon. Esse foi o início da Guerra Civil dos Sete Reinos. Os
+                    Baratheons, aliado aos Tullys, Starks e Arryns, destronou os Targaryen. No final do conflito, Lyanna
+                    estava morta, mas Robert Baratheon tomou para si o Trono de Ferro e se tornou o novo Rei de
+                    Westeros.
+
+                    Ao início da série, somos apresentados a três principais integrantes dessa casa. O primeiro é
+                    Robert, o rei de Westeros, é casado com Cersei Lannister, com quem "teve" três filhos: Jeoffrey,
+                    Tommen e Myrcella. Renly Baratheon é o carismático irmão mais novo de Robert e Senhor de Ponta
+                    Tempestade. Após a morte do irmão, Renly conquista o apoio da Casa Tyrell reclama o trono para si.
+                    Por último temos Stannis Baratheon, o irmão do meio e Senhor de Pedra do Dragão. Também reclama para
+                    si o trono de Westeros.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" id="tyrell" src="https://s.aficionados.com.br/imagens/tyrell.jpg"
+                alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Tyrell - A rosa de raízes fortes</h5>
+                <h4 class="font-weight-bold">"Crescendo Forte"</h4>
+                <p class="card-text">A família guardiã do sul de Westeros e detentores do título de Senhor da Campina. A
+                    Casa Tyrell é uma das sete nobres casas dos Sete Reinos, e a segunda mais rica, perdendo apenas para
+                    os Lannisters de Rochedo Casterly. Sua morada é em Jardim de Cima.
+
+                    Os Tyrells nunca foram reis no passado. Possuem um início bastante humilde, pois eram apenas uma
+                    Casa que trabalhava como administradores e servos para a Casa Gardener, os antigos senhores de
+                    Jardim de Cima. Chegaram ao poder durante as Guerras de Conquista de Aegon Targaryen. Após a derrota
+                    dos Gardeners e suas tropas na Batalha do Campo de Fogo, foram os Tyrells que renderam Jardim de
+                    Cima para os Targaryen. Em gratidão, Aegon passou a eles o comando da Campina. Esse foi começo de
+                    uma longa aliança com os Targaryen.
+
+                    O dever de guardião do sul fazia com que os Tyrells entrassem em recorrentes conflitos contra os
+                    Dorneses, que ainda se mantiveram livres após o fim das Guerras de Conquista. Um dos motivos pelos
+                    quais Tyrell e Martell não são famílias que se dão tão bem.
+
+                    A lealdade dos Tyrells para com os Targaryen durou até o último minuto. Eles não apoiaram a causa
+                    dos Baratheon durante a Guerra Civil e lutaram diretamente contra eles. Haviam conseguido fazer um
+                    cerco em Ponta Tempestade e era apenas uma questão de tempo até que a capital dos Baratheon se
+                    rendesse. No entanto, o rei Aerys foi derrotado antes em Porto Real pelos Lannisters. Após o fim do
+                    reinado Targaryen, os Tyrell se ajoelharam imediatamente, prezando pela sua posição e pela paz.
+
+                    Margaery Tyrell é a ambiciosa filha de Mace Tyrell, Senhor de Jardim de Cima, e almeja ser rainha de
+                    Westeros. Seu irmão é Loras Tyrell, belo e habilidoso cavaleiro, chamado de Cavaleiro das Rosas.
+                    Possui um caso amoroso com Renly Baratheon.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" id="tarly" src="https://s.aficionados.com.br/imagens/tarly.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casa Tarly - O caçador destemido</h5>
+                <h4 class="font-weight-bold">"Primeiros em Batalha"</h4>
+                <p class="card-text">Uma orgulhosa família da Campina, juramentados aos Tyrells de Jardim de cima. A
+                    Casa Tarly tem sua moradia na fortaleza de Monte Chifre, aos pés das Montanhas Vermelhas, a
+                    fronteira natural com Dorne. São uma das poucas famílias de Westeros a possuir uma arma de aço
+                    valiriano, uma espada chamada Veneno do Coração.
+
+                    Os Tarlys são pessoas orgulhosas e destemidas. O lema de sua casa, "Primeiros em Batalha", pode ser
+                    confirmado pela tradição de assumirem a vanguarda das tropas durante as guerras. Isso aconteceu
+                    durante a rebelião do Robert Baratheon, quando Lorde Randyll Tarly, do lado dos Targaryen, comandou
+                    as tropas da Campina na Batalha de Vaufreixo.
+
+                    O senhor de Monte Chifre e líder dos Tarlys é o previamente citado Randyll Tarly, um homem
+                    intransigente, astuto, determinado e orgulhoso. Ele mandou seu filho mais velho e sucessor, Samwell
+                    Tarly, para a muralha, após esse não conseguir superar as expectativas do pai. No lugar de seu
+                    primogênito, Randyll favoreceu seu filho mais novo, Dickon, como sucessor da Casa. </p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <img class="card-img-top" id="martell" src="https://s.aficionados.com.br/imagens/martell.jpg" alt="Imagem de capa do card">
+        <div class="card-body">
+            <h5 class="card-title">Casa Martell - A lança que resistiu ao fogo</h5>
+            <h4 class="font-weight-bold">"Insubmissos, Não Curvados, Não Quebrados</h4>
+            <p class="card-text">A última das sete grandes e nobres Casas de Westeros. Os Martells são os senhores de
+                Dorne, a árida região ao extremo sul dos Sete Reinos. Vivem no Palácio Antigo, na cidade de Lança Solar.
+
+                No princípio, a Casa Martell era apenas uma pequena família de Dorne que disputava o poder da região com
+                outras Casas, como os Yronwoods e os Allyrions. Nessa época, o brasão dos Martell exibia apenas a figura
+                de uma lança. Tanto o brasão quanto a situação da família mudaria com a chegada de Nymeria.
+
+                Nymeria era a rainha guerreira de Rhoinar, um reino em Essos. Contudo, após sua terra ser invadida pelos
+                valirianos e seus dragões, ela fugiu para Dorne com os sobrevivente de seu povo. Ao chegar na nova
+                região, ela queimou os próprios navios para que ninguém se arrependesse e quisesse voltar.
+
+                A chegada de Nymeria foi vista como uma oportunidade pelos Martell. O líder da Casa, Mors Martell, se
+                uniu a rainha guerreira e se casou com ela, adicionando seu símbolo do sol ao seu brasão. Juntos, os
+                Nymeros-Martell conquistaram Dorne e se tornaram a Casa mais poderosa da região.
+
+                Os Martell resistiram a todas as investidas militares dos Targaryen durante e depois das Guerras de
+                Conquista. Dorne foi o único reino que não se ajoelhou e não cedeu suas espadas para forjar o Trono de
+                Ferro. A região só foi unificada ao reino do Trono de Ferro 160 anos depois, quando o príncipe Daeron
+                Targaryen se casou com Mariah Martell.
+
+                Diferente dos outros seis reinos, Dorne não vê as mulheres como inferiores aos homens. Por lá as
+                mulheres também podem ser guerreiras e assumir título nobres, sendo a líder de uma Casa. Muito disso se
+                deve a lendária Nymeria, rainha guerreira.
+
+                Entre os membros famosos dessa Casa de Dorne está Ellia Martell, esposa do príncipe Rhaegar Targaryen
+                durante a época da rebelião de Robert Baratheon. Foi morta por Gregor Clegane, o Montanha, a mando de
+                Tywin Lannister. Oberyn Martell, o Víbora Vermelha, é o seu vingativo irmão, exímio guerreiro com uma
+                lança e famoso por sua vida luxuriosa. Possui oito filhas guerreiras, as Serpentes de Areia, como são
+                chamadas em conjunto. Doran Martell é o terceiro irmão, Senhor de Lança Solar. É um homem calmo,
+                estrategista e inteligente. Sofre de um caso grave de gota.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="row mt-5 mb-5">
             <div class=" col-md-6">
-                <h3> Luta com os Vingadores </h3>
-                <p>Thor faz essa escolha quando ele mergulha o machado no peito de Thanos porque ele quer dizer ao vilão
-                    que
-                    ele o pegou. Que ele conseguiu a sua vingança. Se ele não tivesse tomado essa decisão, se ele
-                    tivesse
-                    golpeado na cabeça [conforme falou Thanos], eles não estariam nessa situação. Contudo, para Thanos
-                    no
-                    final do filme, isso faz parte de sua jornada de herói. Então, nós mais uma vez colocamos ele cara a
-                    cara com a única coisa que ele se importava [Gamora dentro da Joia da Alma], onde ele tem que
-                    confessar
-                    o custo emocional que pagou por tudo que fez na história.
+                <h3 class="font-weight-bold"> O inverno Chegou! </h3>
+                <p>Quando o inverno chegar, você não escutará nenhum rugido dos leãos, não haverá veados pastando nos
+                    campos, não haverá rosa crescendo nos prados, não haverá serpente nas areias, as lulas gigantes
+                    congelarão nas profundezas, os homens esfolados apodrecerão, não haverá truta nadando nas terras
+                    fluviais, não haverá águia voando no céu, e nem o vapor da narina do dragão aquecerá os salões.
+                    Apenas os lobos uivaram na noite fria.
+
                 </p>
-                <p>Se ele tivesse matado Thanos com um único golpe, se isso acontecesse… essas são escolhas que
-                    personagens
-                    que estão sentindo imensa dor fazem. E, esperançosamente, o público pode aprender a ter empatia com
-                    isso. Porque eles podem crescer através das histórias. Histórias podem nos ensinar coisas. E que
-                    devemos
-                    tentar ver todas as escolhas a partir da perspectiva do personagem que as fazem.</p>
             </div>
             <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sCdvStaz_s4" frameborder="0"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NspqGM0DbbQ" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
     </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4 class="text-center">
-                Entre em contato
-            </h4>
-        </div>
-    </div>
+    <h1 class="center font">Fale Conosco</h1>
 
-    <div class="row">
-        <div class="col-md-6">
+    <div class="container mb-50">
+        <div>
+            <h2 class="font color center">Qual sua Duvida? </h2>
             <form>
+                <label for="nome">Nome</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
+                <br>
+                <label for="Apelido">Apelido(Opcional)</label> <br>
+                <input type="text" id="Apelido">
 
-                <div class="form-group">
-                    <label for="exampleFormControlName1">Nome</label>
-                    <input type="nome" class="form-control" id="exampleFormControlName1"
-                        placeholder="Digite seu nome">
-                        
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Endereço de email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="nome@exemplo.com">
-           
-          
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Fale com Thanos:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    
-                </div>
+                <br>
+                <br>
+                <label for="email">E-mail</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
 
-                <div class="form-group d-flex justify-content-end">
-                    
-                    <button class=" btn btn-outline-dark">Enviar</button>
-                </div>
+                <br>
+                <label for="assunto">Assunto</label> <br>
+                <textarea name="assunto" id="assunto" cols="50" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <br>
+
+                <button onclick="enviar()" type="button" class="btn btn-info bg-dark">Enviar</button>
+
             </form>
-
         </div>
-        <div class="col-md-6">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.541802963247!2d-46.530899949355245!3d-23.440913362965674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52431091cb5%3A0x5ad4922a6629c856!2sR.%20Abelardo%20Luz%2C%20%20-%20Jardim%20Santa%20Cecilia%2C%20Guarulhos%20-%20SP%2C%2007123-460!5e0!3m2!1sen!2sbr!4v1610377664518!5m2!1sen!2sbr"
+
+
+        <div class="ml-50">
+            <p class="font-weight-bold">Rua Abelardo luz</p>
+            <p class="font-weight-bold">Guarulhos-SP </p>
+
+            <iframe class="mb-50"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.541802963247!2d-46.530899949355245!3d-23.440913362965674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef52431091cb5%3A0x5ad4922a6629c856!2sR.%20Abelardo%20Luz%2C%20Jardim%20Santa%20Cecilia%2C%20Guarulhos%20-%20SP%2C%2007123-460!5e0!3m2!1sen!2sbr!4v1610377664518!5m2!1sen!2sbr"
                 width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
-        
-
+        </div>
     </div>
-</div>
-    
-
-
     <hr>
-    <div class="container"><footer>
+    <div class="container">
+        <footer>
 
-        <div class="row mb-3">
-            <div class="col-md-12 d-flex justify-content-center">
+            <div class="row mb-3">
+                <div class="col-md-12 d-flex justify-content-center">
 
-                <a href="https://www.facebook.com/" class="p-3">
-                    <img class="tm-social" src="assets/img/facebook.png" alt="Logo do Facebook">
-                </a>
-                <a href="https://www.linkedin.com/" class="p-3">
-                    <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
-                </a>
-                <a href="https://www.instagram.com/" class="p-3">
-                    <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Instagram">
-                </a>
+                    <a href="https://www.facebook.com/" class="p-3">
+                        <img class="tm-social" src="assets/img/facebook.png" alt="Logo do Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="p-3">
+                        <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/" class="p-3">
+                        <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Instagram">
+                    </a>
 
 
 
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-center">
-                    Todos os direitos reservados: Diego Joaquim &copy
-                </p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">
+                        Todos os direitos reservados: Diego Joaquim &copy
+                    </p>
 
+                </div>
             </div>
-        </div>
 
 
 
-    </footer>
-</div>
-    
+        </footer>
+    </div>
+
     </div>
     </div>
 
-    
 
 
 
@@ -285,7 +623,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
