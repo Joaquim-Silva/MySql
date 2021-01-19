@@ -21,7 +21,7 @@ let assunto = document.querySelector('#assunto')
 
 nome.style.width = '100%'
 Apelido.style.width = '100%'
-email.style.width = '100%'
+email.style.width = '150%'
 
 
 function validaNome() {
