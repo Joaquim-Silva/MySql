@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-inicio',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
+  router: any;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    if(environment.token == ''){
+     
+      this.router.navigate(['/entrar'])
+    }
   }
 
 }
