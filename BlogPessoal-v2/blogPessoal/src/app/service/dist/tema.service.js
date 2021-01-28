@@ -19,8 +19,17 @@ var TemaService = /** @class */ (function () {
     TemaService.prototype.getAllTema = function () {
         return this.http.get('http://localhost:8080/tema', this.token);
     };
+    TemaService.prototype.getByIdTema = function (id) {
+        return this.http.get("http://localhost:8080/tema/" + id, this.token);
+    };
     TemaService.prototype.postTema = function (tema) {
         return this.http.post('http://localhost:8080/tema', tema, this.token);
+    };
+    TemaService.prototype.putTema = function (tema) {
+        return this.http.put('http://localhost:8080/tema', tema, this.token);
+    };
+    TemaService.prototype.deleteTema = function (id) {
+        return this.http["delete"]("http://localhost:8080/tema/" + id, this.token);
     };
     TemaService = __decorate([
         core_1.Injectable({
